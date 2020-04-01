@@ -1,30 +1,31 @@
-import React, { Component } from "react";
-import { BrowserRoute as Router, Route} from "react-router-dom"
-import Contact from "./Pages/ContactPage"
-import Inspire from "./Pages/InspirationPage"
-import Landing from "./Pages/LandingPage"
-import MeetingAdd from "./Pages/MeetingCreate"
-import Meeting from "./Pages/MeetingsPage"
-import Other from "./Pages/otherGroups"
-import Profile from "./Pages/profilePage"
+import React from "react";
+import { BrowserRouter as Router, Route} from "react-router-dom";
+import Contact from "./Pages/ContactPage/ContactPage";
+import Inspire from "./Pages/InspirationPage/InspirationPage";
+import Landing from "./Pages/LandingPage/LandingPage";
+import MeetingAdd from "./Pages/MeetingCreate/MeetingCreate";
+import Meeting from "./Pages/MeetingPage/MeetingsPage";
+import Other from "./Pages/OtherGroups/OtherGroups";
+import Profile from "./Pages/ProfilePage/ProfilePage";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./App.css";
 
 
 function App() {
   return (
     <Router>
-      <div>
-        <Route exact path="/" component={Landing} />
+      <main className="container">
+        <Route exact path="/" component={()=><Landing username='someone'/>} />
         <Route exact path="/contactpage" component={Contact} />
         <Route exact path="/inspire" component={Inspire} />
-        <Route exact path="/meetingreation" component={MeetingAdd} />
-        <Route exact path="/meetingpage" component={Meeting} />
+        <Route exact path="/meetingcreation" component={MeetingAdd} />
+        <Route exact path='/meetings' component={()=><Meetings username='someone'/>}/>
         <Route exact path="/othergroups" component={Other} />
         <Route exact path="/profilepage" component={Profile} />
-      </div>
+      </main>
     </Router>
   );
 }
-
 
 export default App;
