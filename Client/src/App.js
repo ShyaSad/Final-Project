@@ -1,15 +1,14 @@
-import React, { Component } from "react";
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Navbar from './components/Nav';
-import Landing from  './pages/Landing';
-import Contact from "./pages/ContactPage"
-import Inspire from "./pages/InspirationPage"
-import Landing from "./pages/LandingPage"
-import Meetings from './pages/Meetings';
-import MeetingAdd from "./pages/MeetingCreate"
-import Other from "./pages/otherGroups"
-import Profile from "./pages/profilePage"
+import React from "react";
+import { BrowserRouter as Router, Route} from "react-router-dom";
+import Contact from "./Pages/ContactPage/ContactPage";
+import Inspire from "./Pages/InspirationPage/InspirationPage";
+import Landing from "./Pages/LandingPage/LandingPage";
+import MeetingAdd from "./Pages/MeetingCreate/MeetingCreate";
+import Meeting from "./Pages/MeetingPage/MeetingsPage";
+import Other from "./Pages/OtherGroups/OtherGroups";
+import Profile from "./Pages/ProfilePage/ProfilePage";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./App.css";
 
 
