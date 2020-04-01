@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { BrowserRoute as Router, Route} from "react-router-dom"
-import Contact from "./Pages/ContactPage"
-import Inspire from "./Pages/InspirationPage"
-import Landing from "./Pages/LandingPage"
-import MeetingAdd from "./Pages/MeetingCreate"
-import Meeting from "./Pages/MeetingsPage"
-import Other from "./Pages/otherGroups"
-import Profile from "./Pages/profilePage"
+import React from "react";
+import { BrowserRouter as Router, Route} from "react-router-dom";
+import Contact from "./Pages/ContactPage/ContactPage";
+import Inspire from "./Pages/InspirationPage/InspirationPage";
+import Landing from "./Pages/LandingPage/LandingPage";
+import MeetingAdd from "./Pages/MeetingCreate/MeetingCreate";
+import Meeting from "./Pages/MeetingPage/MeetingsPage";
+import Other from "./Pages/OtherGroups/OtherGroups";
+import Profile from "./Pages/ProfilePage/ProfilePage";
 import "./App.css";
 
 
