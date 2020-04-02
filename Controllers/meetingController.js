@@ -1,6 +1,6 @@
 const db = require("../Models");
 
-module.export = {
+module.exports = {
 findAll: function(req, res) {
     db.Meeting
     .find(req.query)
@@ -18,10 +18,10 @@ findByDay: function(req, res) {
 findByTime: function(req, res) {
     db.Meeting
     .findByTime(req.params.time)
-    .then(dbModel => res.json(dbModel)
+    .then(dbModel => res.json(dbModel))
     .catch(err => res.status(422).json(err));
 },
-create: function(req, res) {
+create: function(req,res) {
     db.Meeting
     .create(req.body)
     .then(dbModel => res.json(dbModel))
@@ -32,7 +32,7 @@ remove: function(req, res) {
     .findById({ _id: req.params.id })
     .then(dbModel => dbModel.remove())
     .then(dbModel => res.json(dbModel))
-    .catch(err => res.status(422).json(err));
+//     .catch(err => res.status(422).json(err));
  }
 
 
