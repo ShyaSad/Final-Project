@@ -1,4 +1,4 @@
-// our contact info
+// when the meetings are via api SQL or Mongo
 
 import React, { useState } from "react";
 import seed from "../../utils/meetingSeed";
@@ -94,3 +94,4 @@ export default () => {
     </>
   );
 };
+
