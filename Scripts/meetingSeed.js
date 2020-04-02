@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-// const db = require("placeholder")
+const db = require("../Models");
 
 mongoose.connect(
   // put in process.env etc
