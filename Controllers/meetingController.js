@@ -7,7 +7,7 @@ findAll: function(req, res) {
     .then(dbModel => res.json(dbModel))
     .catch(err => res.status(422).json(err));
 },
-// need to make daily and specific day show up
+
 findByDay: function(req, res) {
     db.Meeting
     .findByDay(req.params.day)
@@ -32,7 +32,7 @@ remove: function(req, res) {
     .findById({ _id: req.params.id })
     .then(dbModel => dbModel.remove())
     .then(dbModel => res.json(dbModel))
-//     .catch(err => res.status(422).json(err));
+    .catch(err => res.status(422).json(err));
  }
 
 
