@@ -1,3 +1,4 @@
 module.exports = {
-    Meeting: require("./Meeting")
+    Meeting: require("./Meeting"),
+    InspireD: require("./DailyInsp")
 };

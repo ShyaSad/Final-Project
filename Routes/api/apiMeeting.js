@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const meetingController = require('../../Controllers/meetingController')
+const meetingController = require('../../Controllers/meetingController');
 // const need something else here
 
 // upcoming route is prob wrong for frontend

@@ -3,9 +3,9 @@ const express = require("express");
 
 module.exports = {
 findAll: function(req, res) {
-    console.log(req.query)
+    console.log(req.body)
     db.Meeting
-    .find(req)
+    .find(req.body)
     .then(dbModel => res.json(dbModel))
     .catch(err => res.status(422).json(err));
 },
