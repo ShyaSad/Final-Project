@@ -3,8 +3,8 @@ const meetingController = require('../../Controllers/meetingController')
 // const need something else here
 
 // upcoming route is prob wrong for frontend
-router.route("/allmeeting")
-.get(meetingController.findAll());
+router.route("/allmeetings")
+.get(meetingController.findAll);
 
 // router.post('/create', (req,res)=>{
 //     console.log(req.body)
