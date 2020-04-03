@@ -1,8 +1,8 @@
 
 import React, { useState } from "react";
 import seed from "../../utils/meetingSeed";
-import MeetingCard from "../../components/MeetingCards";
-import Dropdown from '../../components/Dropdown';
+import MeetingCard from "../../components/MeetingCards/MeetingCards";
+import Dropdown from '../../components/Dropdown/Dropdown';
 
 const date = new Date();
 const hour = date.getHours();
