@@ -1,4 +1,3 @@
-// when the meetings are via api SQL or Mongo
 
 import React, { useState } from "react";
 import seed from "../../utils/meetingSeed";
@@ -22,35 +21,6 @@ export default () => {
   return (
     <>
       <Dropdown handleFilter={handleFilter}/>
-      <nav aria-label="Page navigation example">
-        <ul className="pagination">
-          <li className="page-item" onClick={()=>setPage(page-1)}>
-            <a className="page-link" href="#">
-              Previous
-            </a>
-          </li>
-          <li className="page-item" onClick={()=>setPage(1)}>
-            <a className="page-link" href="#">
-              1
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" onClick={()=>setPage(2)} href="#">
-              2
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" onClick={()=>setPage(3)} href="#">
-              3
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" onClick={()=>setPage(page+1)} href="#">
-              Next
-            </a>
-          </li>
-        </ul>
-      </nav>
       {filteredMeetings
         .sort((a, b) =>
           a.time.split(":")[0] < b.time.split(":")[0]
@@ -62,36 +32,6 @@ export default () => {
         .map(item => (
           <MeetingCard key={item.code} meeting={item} />
         ))}
-      <nav aria-label="Page navigation example">
-        <ul className="pagination">
-          <li className="page-item">
-            <a className="page-link" href="#">
-              Previous
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              1
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              2
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              3
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              Next
-            </a>
-          </li>
-        </ul>
-      </nav>
     </>
   );
 };
-
