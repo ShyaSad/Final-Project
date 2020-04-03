@@ -1,4 +1,3 @@
-// our contact info
 import React from "react";
 
 const LandingPage = () => {
