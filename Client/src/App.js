@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route} from "react-router-dom";
-import Navbar from "./components/Nav";
-import Contact from "./Pages/ContactPage/ContactPage";
-import Inspire from "./Pages/InspirationPage/InspirationPage";
-import Landing from "./Pages/LandingPage/LandingPage";
-import MeetingAdd from "./Pages/MeetingCreate/MeetingCreate";
-import Meetings from "./Pages/MeetingPage/MeetingsPage";
-import Other from "./Pages/OtherGroups/OtherGroups";
-import Profile from "./Pages/ProfilePage/ProfilePage";
+import Navbar from "./components/Nav/Nav";
+import Contact from "./pages/ContactPage/ContactPage";
+import Inspire from "./pages/InspirationPage/InspirationPage";
+import Landing from "./pages/LandingPage/LandingPage";
+import MeetingAdd from "./pages/MeetingCreate/MeetingCreate";
+import MeetingsPage from "./pages/MeetingPage/MeetingsPage";
+import Other from "./pages/OtherGroups/OtherGroups";
+import Profile from "./pages/ProfilePage/ProfilePage";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -32,4 +32,3 @@ function App() {
 }
 
 export default App;
-000000000000000000000000000000
