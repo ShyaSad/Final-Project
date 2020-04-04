@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Button, CardHeader, CardBody,
   CardTitle, CardText } from 'reactstrap';
+import './style.css';
 
 export default ({meeting})=>{
     return (

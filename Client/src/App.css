@@ -6,7 +6,6 @@
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -27,7 +26,6 @@
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,43 +34,6 @@
     transform: rotate(360deg);
   }
 }
-
-.navbar-brand {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-}
-
-
-
-.card-body {
-  background-color: #fcf8ee;
-  opacity: .8;
-}
-
-.card-title {
-  font-weight: bold;
-  color: #fcf8ee;
-  background-color: #50524E;
-  padding-left: 15px;
-}
-
-.card-subtitle {
-  color: black;
-  padding-left: 15px;
-}
-
-.card-text {
-  color: black;
-  font-weight: lighter;
-  padding-left: 15px;
-}
-
-.card-link {
-  margin-left: 15px;
-}
-
-
-
 
 .justify.content.md.center {
   vertical-align: middle;
@@ -99,7 +60,6 @@ position: absolute;
     position: fixed;
     top: 35%;
     right: 16%;
-
   }
 }
 
@@ -117,13 +77,11 @@ position: absolute;
     position: fixed;
     top: 65%;
     right: 16%;
-
   }
 }
 
 .colApp {
   vertical-align: middle;
-
 }
 
 .appIntro {
@@ -142,8 +100,6 @@ position: absolute;
     top: 73%;
     right: 2%;  
     text-align: center !important;
-
-    
   }
 }
 
@@ -157,7 +113,8 @@ position: absolute;
     width: 50%;
     position: fixed;
     top: 42%;
-    right: 28%;  }
+    right: 28%;
+  }
 }
 
 .position {
@@ -182,6 +139,5 @@ body {
     position: fixed;
     top: 85%;
     right: 25%;
-    
   }
 }
