@@ -1,0 +1,11 @@
+#calNumber {
+    font-size: 72pt;
+    text-align: center;
+    font-weight: 500;
+}
+
+#calMonth {
+    font-size: 24pt;
+    text-align: center;
+    line-height: 0rem;
+}

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import seed from "../../utils/dailyReflectionSeed";
-import ReflectionCard from "../../components/ReflectionCard/ReflectionCard";
-import Date from "../../components/Dates/Dates";
+import ReflectionCard from "../../components/ReflectionCard";
+import Date from "../../components/Date";
 import moment from 'moment';
+import './style.css';
 
 // const date = new Date();
 // const month = date.getMonth();
@@ -11,7 +12,7 @@ import moment from 'moment';
 const Reflections = () => {
   const month = moment().format('MMMM');
   const day = moment().format('Do');
-  const d = moment().format('D')
+  const d = moment().format('D');
   const [reflections, setReflections] = useState(seed);
   const [filteredReflections, setFilteredReflections] = useState([]);
 
@@ -22,11 +23,14 @@ const Reflections = () => {
 
 
   return (
-    <>
-        <Date mo={month} day={day}/>
-        {filteredReflections.map(data=><ReflectionCard data={data}/>)}
-        
-    </>
+    <div className='row'>
+        <div id='dateBlock' className='col-2'>
+          <Date mo={month} day={day}/>
+        </div>
+        <div className='col-10'>
+          {filteredReflections.map(data=><ReflectionCard data={data}/>)}
+        </div>
+    </div>
   );
 };
 

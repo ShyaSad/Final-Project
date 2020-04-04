@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardHeader, CardBody,
   CardTitle, CardText } from 'reactstrap';
+import './style.css';
 
 export default ({data})=>{
     return (
@@ -17,4 +18,3 @@ export default ({data})=>{
             </Card>
            ) 
 }
-

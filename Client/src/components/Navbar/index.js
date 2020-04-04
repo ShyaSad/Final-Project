@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.css";
 import {
   Collapse,
   Navbar,
@@ -16,13 +17,12 @@ import {
 
 const Example = props => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
       <Navbar color="dark" dark expand="lg">
-        <NavbarBrand href="/">AA Away</NavbarBrand>
+      <NavbarBrand href="/"><img src="../../assets/inline-logo.png" alt="AA Away"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>

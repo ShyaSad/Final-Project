@@ -1,8 +1,8 @@
 
 import React, { useState } from "react";
 import seed from "../../utils/meetingSeed";
-import MeetingCard from "../../components/MeetingCards/MeetingCards";
-import Dropdown from '../../components/Dropdown/Dropdown';
+import MeetingCards from "../../components/MeetingCards";
+import Dropdown from "../../components/Dropdown";
 
 const date = new Date();
 const hour = date.getHours();
@@ -30,7 +30,7 @@ export default () => {
             : 0
         )
         .map(item => (
-          <MeetingCard key={item.code} meeting={item} />
+          <MeetingCards key={item.code} meeting={item} />
         ))}
     </>
   );
