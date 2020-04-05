@@ -1,12 +1,3 @@
-const mongoose = require("mongoose");
-const db = require("../Models");
-
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/aaadb', 
-{
-  useCreateIndex: true,
-  useNewUrlParser: true
-}
-)
 
 const meetingSeed = [
   {
@@ -674,14 +665,14 @@ const meetingSeed = [
     phone: "",
     notes: "LGBTQA 1 hour/Select page from "
   },
-  // {
-  //   name: '15 minute speaker followed by participation."',
-  //   day: "",
-  //   time: "",
-  //   link: "",
-  //   phone: "",
-  //   notes: ""
-  // },
+  {
+    name: '15 minute speaker followed by participation."',
+    day: "",
+    time: "",
+    link: "",
+    phone: "",
+    notes: ""
+  },
   {
     name: "AA Happy Hour Meeting (Melrose & Mansfield)",
     day: "Monday",
@@ -4647,6 +4638,5 @@ const meetingSeed = [
     notes: "15-20 Minute Speaker + Participation / Open Meeting"
   }
 ];
-db.Meeting.insertMany(meetingSeed).then(function(value) {
-    console.log("Data inserted, "+ value.length);
-  });
+
+export default meetingSeed;
