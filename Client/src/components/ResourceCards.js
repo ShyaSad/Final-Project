@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardText } from 'reactstrap';
-import Button from 'react-bootstrap/Button';
+import { Button, Card, CardBody, CardTitle, CardText } from 'reactstrap';
 
 export default ({title, url}) => {
 return <Card>

@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Contact from "./pages/ContactPage";
-import Inspire from "./pages/InspirationPage";
-import Landing from "./pages/LandingPage";
-import MeetingAdd from "./pages/MeetingCreate";
-import MeetingsPage from "./pages/MeetingsPage";
-import Other from "./pages/OtherGroups";
-import Profile from "./pages/ProfilePage";
+import Contact from "./Pages/ContactPage";
+import Inspire from "./Pages/InspirationPage";
+import Landing from "./Pages/LandingPage";
+import MeetingAdd from "./Pages/MeetingCreate";
+import MeetingsPage from "./Pages/MeetingsPage";
+import Other from "./Pages/OtherGroups";
+import Profile from "./Pages/ProfilePage";
 import "./App.css";
 
 function App() {

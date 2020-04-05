@@ -1,10 +1,10 @@
 import React from "react";
-import Nav from "../../components/Nav";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button'
+import Example from "../../components/Navbar";
+import {Container} from 'reactstrap';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+// import Image from 'react-bootstrap/Image';
+// import Button from 'react-bootstrap/Button';
 import ResourceCards from "../../components/ResourceCards";
 
 // import "./OtherGroups.css"
@@ -28,7 +28,7 @@ const OtherGroups = () => {
   const groupResourceCards = meetings.map(meeting => <ResourceCards title={meeting.title} url={meeting.url}/>)  ;
   return (
     <React.Fragment>
-      <Nav />
+      <Example />
       <Container className="land-cont">
         
         {groupResourceCards}

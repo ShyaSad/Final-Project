@@ -1,10 +1,7 @@
 // our contact info
 import React from "react";
-import {Container} from 'reactstrap';
-import {Row} from 'reactstrap';
-import {Col} from 'reactstrap';
+import {Container, Row, Col, Button} from 'reactstrap';
 import Logo from '../../assets/aa-away-logo.svg';
-import {Button} from 'reactstrap'
 // import "./LandingPage.css"
 
 const LandingPage = () => {
@@ -18,7 +15,7 @@ const LandingPage = () => {
     </Col>
     <div className="position">
     <Col  md="auto" className="logoIcon">
-        <img src={Logo} id="logo"/>
+        <img src={Logo} alt="logo" id="logo"/>
     </Col>
     </div>
     <Col className="colApp">
