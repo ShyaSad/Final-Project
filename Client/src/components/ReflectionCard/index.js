@@ -1,19 +1,17 @@
 import React from 'react';
 import { Card, CardHeader, CardBody,
   CardTitle, CardText } from 'reactstrap';
-import './style.css';
+import './Reflection.css';
 
 export default ({data})=>{
     return (
             <Card>
               <CardHeader></CardHeader>
               <CardBody>
-                <CardTitle>{data.title}</CardTitle>
-                <CardText>
-                  <p id="excerpt">{data.excerpt}</p>
-                  <p id="reference">{data.reference}</p>
-                  <p id="text">{data.text}</p>
-                </CardText>
+                <CardTitle id='title'>{data.title}</CardTitle>
+                  <CardText id="excerpt">{data.excerpt}</CardText>
+                  <CardText id="reference">{data.reference}</CardText>
+                  <CardText id="text">{data.text}</CardText>
               </CardBody>
             </Card>
            ) 

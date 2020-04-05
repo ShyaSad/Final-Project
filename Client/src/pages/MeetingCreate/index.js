@@ -1,5 +1,6 @@
 // our contact info
 import React from "react";
+import "./MeetingCreate.css";
 
 const MeetingCreate = () => {
     return (

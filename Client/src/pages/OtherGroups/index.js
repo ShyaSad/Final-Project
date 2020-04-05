@@ -1,5 +1,6 @@
 // our contact info
 import React from "react";
+import "./OtherGroups.css";
 
 const OtherGroups = () => {
     return (

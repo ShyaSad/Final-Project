@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./Navbar.css";
 import {
   Collapse,
   Navbar,
@@ -14,6 +14,7 @@ import {
   DropdownItem,
   NavbarText
 } from "reactstrap";
+import Logo from "../../assets/inline-logo.svg";
 
 const Example = props => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Example = props => {
   return (
     <div>
       <Navbar color="dark" dark expand="lg">
-      <NavbarBrand href="/"><img src="../../assets/inline-logo.png" alt="AA Away"/></NavbarBrand>
+      <NavbarBrand href="/"><img src={Logo} alt="AA Away"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
