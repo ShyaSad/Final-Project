@@ -1,10 +1,6 @@
 import React from "react";
-import Example from "../../components/Navbar";
+// import Example from "../../components/Navbar";
 import {Container} from 'reactstrap';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-// import Image from 'react-bootstrap/Image';
-// import Button from 'react-bootstrap/Button';
 import ResourceCards from "../../components/ResourceCards";
 
 // import "./OtherGroups.css"
@@ -28,8 +24,8 @@ const OtherGroups = () => {
   const groupResourceCards = meetings.map(meeting => <ResourceCards title={meeting.title} url={meeting.url}/>)  ;
   return (
     <React.Fragment>
-      <Example />
-      <Container className="land-cont">
+      {/* <Example /> */}
+      <Container>
         
         {groupResourceCards}
 
