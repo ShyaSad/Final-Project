@@ -1,5 +1,6 @@
 // our contact info
 import React from "react";
+import "./Contact.css";
 
 const ContactPage = () => {
     return (

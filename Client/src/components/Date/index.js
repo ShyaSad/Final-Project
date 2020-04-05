@@ -1,11 +1,12 @@
 import React from 'react';
 import { Jumbotron } from 'reactstrap';
 import moment from 'moment';
-import './style.css';
+import './Date.css';
 
 
 const Calendar = (props) => {
   const month = moment().format('MMMM');
+  // eslint-disable-next-line
   const day = moment().format('Do');
   const d = moment().format('D');
 

@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route} from "react-router-dom";
+import { Container } from 'reactstrap';
+
 import Navbar from "./components/Navbar";
 import Contact from "./pages/ContactPage";
 import Inspire from "./pages/InspirationPage";
@@ -14,7 +16,7 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <main className="container">
+      <Container>
         <Route exact path="/" component={()=><Landing username='someone'/>} />
         <Route exact path="/contactpage" component={Contact} />
         <Route exact path="/dailyinspirations" component={Inspire} />
@@ -22,7 +24,7 @@ function App() {
         <Route exact path='/meetings' component={()=><MeetingsPage username='someone'/>}/>
         <Route exact path="/othergroups" component={Other} />
         <Route exact path="/profilepage" component={Profile} />
-      </main>
+      </Container>
     </Router>
   );
 }
