@@ -10,23 +10,14 @@
       margin-right: auto;
       margin-left: auto;
   }
-  .card-body {
+  .login-container {
     background-color: #FCF8EE;
     opacity: .8;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: auto;
   }
-  .card-title {
-    font-weight: bold;
-    color: #FCF8EE;
-    background-color: #50524E;
-    padding-left: 15px;
-  }
-  .card-subtitle {
-    color: black;
-    padding-left: 15px;
-  }
-  .card-text {
-    color: black;
-    font-weight: lighter;
-    padding-left: 15px;
-  }
+  
  

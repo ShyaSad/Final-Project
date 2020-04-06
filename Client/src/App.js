@@ -10,6 +10,7 @@ import MeetingAdd from "./pages/MeetingCreate";
 import MeetingsPage from "./pages/MeetingsPage";
 import Other from "./pages/OtherGroups";
 import Profile from "./pages/ProfilePage";
+import Login from "./pages/LoginPage";
 import "./App.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/meetings' component={()=><MeetingsPage username='someone'/>}/>
         <Route exact path="/othergroups" component={Other} />
         <Route exact path="/profilepage" component={Profile} />
+        <Route exact path="/login" component={Login} />
       </Container>
     </Router>
   );
