@@ -1,0 +1,32 @@
+.navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  .navbar-a {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .card-body {
+    background-color: #FCF8EE;
+    opacity: .8;
+  }
+  .card-title {
+    font-weight: bold;
+    color: #FCF8EE;
+    background-color: #50524E;
+    padding-left: 15px;
+  }
+  .card-subtitle {
+    color: black;
+    padding-left: 15px;
+  }
+  .card-text {
+    color: black;
+    font-weight: lighter;
+    padding-left: 15px;
+  }
+ 
