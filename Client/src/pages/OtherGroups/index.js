@@ -1,7 +1,5 @@
 import React from "react";
-// import Example from "../../components/Navbar";
-import {Container} from 'reactstrap';
-import ResourceCards from "../../components/ResourceCards";
+import "./OtherGroups.css";
 
 // import "./OtherGroups.css"
 const OtherGroups = () => {

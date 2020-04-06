@@ -4,6 +4,7 @@ import {Container} from 'reactstrap';
 import {Jumbotron} from 'reactstrap';
 import ContactCard from "../../components/ContactCard";
 import './style.css';
+import "./Contact.css";
 
 // import "./OtherGroups.css"
 const ContactGroups = () => {
