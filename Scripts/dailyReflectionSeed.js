@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const db = require("../Models");
 
-mongoose.connect(process.env.MONGOB_URI || "placeholder",
+mongoose.connect(process.env.MONGOB_URI || "mongodb://localhost/aaab",
 
 {
   useCreateIndex: true,
@@ -3266,7 +3266,7 @@ const dailyReflections = [
   },
 ];
 
-db.Placeholder.inserMany(Placeholderseed).then(function(value) {
+db.InspireD.inserMany(dailyReflections).then(function(value) {
   console.log("Data inserted, "+ value.length);
 });
 
