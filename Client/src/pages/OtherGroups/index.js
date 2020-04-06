@@ -1,4 +1,6 @@
 import React from "react";
+import ResourceCards from "../../components/ResourceCards";
+import {Container} from "reactstrap";
 import "./OtherGroups.css";
 
 // import "./OtherGroups.css"
