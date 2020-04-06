@@ -1,4 +1,5 @@
 module.exports = {
     Meeting: require("./Meeting"),
-    InspireD: require("./DailyInsp")
+    InspireD: require("./DailyInsp"),
+    User: require('./userModel')
 };
