@@ -5,7 +5,7 @@ import "./SignupPage.css";
 const Example = (props) => {
   return (
       <Container className="signup-container">
-          <h1>Login</h1>
+          <h1>Sign Up</h1>
       <Form>
       <FormGroup>
         <Label for="exampleEmail">Email</Label>

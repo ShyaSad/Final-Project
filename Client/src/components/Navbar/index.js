@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import {
+  Button,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -52,6 +53,12 @@ const Example = props => {
             </UncontrolledDropdown>
           </Nav>
           <NavbarText></NavbarText>
+          <NavItem>
+        <Button href="#">Login</Button>
+        </NavItem>
+        <NavItem>
+        <Button href="#">Sign Up</Button>
+        </NavItem>
         </Collapse>
       </Navbar>
     </div>
