@@ -3,6 +3,7 @@ import React from "react";
 import {Container} from 'reactstrap';
 import {Jumbotron} from 'reactstrap';
 import ContactCard from "../../components/ContactCard";
+import './style.css';
 
 // import "./OtherGroups.css"
 const ContactGroups = () => {
@@ -13,7 +14,7 @@ const ContactGroups = () => {
   const contactResourceCards = contacts.map(contact => <ContactCard name= {contact.name} title={contact.title} url={contact.url} email={contact.email}/>)  ;
   return (
     <React.Fragment>
-      <Jumbotron>
+      <Jumbotron className="jumbotron">
       <Container>
       <h1 className="text-center" >Contact</h1>
         {contactResourceCards}

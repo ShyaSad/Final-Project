@@ -2,7 +2,10 @@ h1 {
   text-align: justify;
 }
 
-.navbar-brand {
+.jumbotron {
+  background: none;
+}
+  .navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
   }
@@ -21,7 +24,7 @@ h1 {
   .card-title {
     font-weight: bold;
     color: #FCF8EE;
-    background-color: #50524E;
+    /* background-color: #50524E; */
     padding-left: 15px;
   }
   .card-subtitle {
