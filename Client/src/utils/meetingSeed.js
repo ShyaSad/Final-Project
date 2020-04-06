@@ -1,3 +1,4 @@
+const fs = require('fs');
 
 const meetingSeed = [
   {
@@ -664,14 +665,6 @@ const meetingSeed = [
     link: "https://zoom.us/j/8075993894",
     phone: "",
     notes: "LGBTQA 1 hour/Select page from "
-  },
-  {
-    name: '15 minute speaker followed by participation."',
-    day: "",
-    time: "",
-    link: "",
-    phone: "",
-    notes: ""
   },
   {
     name: "AA Happy Hour Meeting (Melrose & Mansfield)",
@@ -4631,7 +4624,7 @@ const meetingSeed = [
   {
     name: "Sunday Night Marina Center Late Night",
     day: "Sunday",
-    time: "11:00:00 PM",
+    time: "11:00 PM",
     link: "https://zoom.us/j/579426584",
     phone: "(669) 900-6833",
     code: "579426584#",
@@ -4639,4 +4632,16 @@ const meetingSeed = [
   }
 ];
 
-export default meetingSeed;
+
+
+const meetingSeedMod = meetingSeed.map((a,i)=> {
+  let hour = Number(a.time.split(':')[0]);
+  console.log(a.time.split(':')[1], i)
+  let minutes = Number(a.time.split(':')[1].split(' ')[0])/100;
+  let modTime = hour + (a.time.match(/PM/) && hour !== 12 ? 12 : a.time.match(/AM/) && hour !== 12 ? 0 : 
+  a.time.match(/PM/) && hour === 12 ? 0 : -12) + minutes
+
+  return {...a, military: modTime}
+}).sort((a,b)=> a.name > b.name ? -1 : a.name < b.name ? 1 : 0)
+
+fs.writeFile('./modifiedRandom.json', JSON.stringify(meetingSeedMod), (err)=> console.log(err))
