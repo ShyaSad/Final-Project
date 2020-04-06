@@ -10,6 +10,11 @@
       margin-right: auto;
       margin-left: auto;
   }
+
+  .groups-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .card-body {
     background-color: #FCF8EE;
     opacity: .8;

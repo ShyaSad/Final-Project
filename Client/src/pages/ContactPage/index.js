@@ -15,8 +15,8 @@ const ContactGroups = () => {
   const contactResourceCards = contacts.map(contact => <ContactCard name= {contact.name} title={contact.title} url={contact.url} email={contact.email}/>)  ;
   return (
     <React.Fragment>
-      <Jumbotron className="jumbotron">
-      <Container>
+
+      <Container className="contact-container"> 
       <h1 className="text-center" >Contact</h1>
         {contactResourceCards}
 
@@ -26,7 +26,6 @@ const ContactGroups = () => {
           
        
       </Container>
-      </Jumbotron>
     </React.Fragment>
   )
 }
