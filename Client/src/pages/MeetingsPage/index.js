@@ -5,10 +5,7 @@ import MeetingCards from "../../components/MeetingCards";
 import Dropdown from "../../components/Dropdown";
 import "./Meetings.css";
 
-const date = new Date();
-const hour = date.getHours();
-const day = date.getUTCDay();
-console.log(day, hour);
+// const date = new Date();
 
 export default () => {
   // eslint-disable-next-line
@@ -18,8 +15,10 @@ export default () => {
   const [filteredMeetings, setFilteredMeetings] = useState(seed);
 
   const handleFilter =(arg)=>{
+    // let [hour] = arg.split(":");
+    // hour = +hour;
     console.log(arg)
-      setFilteredMeetings(meetings.filter(a=>a.day === arg))
+      setFilteredMeetings(meetings.filter(a=>a.day === arg)/*.filter(b=>b.hour === date.getHours())*/);
   }
 
   return (

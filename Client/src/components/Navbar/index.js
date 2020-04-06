@@ -36,6 +36,9 @@ const Example = props => {
             <NavItem>
               <NavLink href="/contact">Contact</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/othergroups">Other Groups</NavLink>
+            </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Meetings
