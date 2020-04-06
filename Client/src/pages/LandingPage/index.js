@@ -1,11 +1,8 @@
 // our contact info
 import React from "react";
-import { Container } from "reactstrap";
-import { Row } from "reactstrap";
-import { Col } from "reactstrap";
-import Logo from "../../assets/aa-away-logo.svg";
-import { Button } from "reactstrap";
-import "./Landing.css";
+import {Container, Row, Col, Button} from 'reactstrap';
+import Logo from '../../assets/aa-away-logo.svg';
+// import "./LandingPage.css"
 
 const LandingPage = () => {
   return (

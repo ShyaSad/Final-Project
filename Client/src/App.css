@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,9 +10,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
-  background-color: #282c34;
+  background-color: #282C34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,9 +20,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
-  color: #61dafb;
+  color: #61DAFB;
 }
 @keyframes App-logo-spin {
   from {
@@ -132,12 +129,97 @@ body {
   background-image: url("../src/assets/AAmeetup-D.jpg");
 }
 
-.btn-primary {
-}
+/* .btn-primary {
+} */
 @media only screen and (max-width: 600px) {
   .btn-primary {
     position: fixed;
     top: 85%;
     right: 25%;
   }
+}
+.justify.content.md.center {
+  vertical-align: middle;
+     display:inline-block;
+}
+.land-cont {
+vertical-align: middle;
+position: absolute;
+  top: 50%;
+}
+.appName-leftSide {
+  font-size: 4rem;
+  color: white;
+  text-align: center !important;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family:'Raleway', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .appName-leftSide {
+    font-size: 3rem;
+    position: fixed;
+    top: 35%;
+    right: 16%;
+  }
+}
+.appName {
+  font-size: 4rem;
+  color: white;
+  text-align: center !important;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family:'Raleway', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .appName {
+    font-size: 3rem;
+    position: fixed;
+    top: 65%;
+    right: 16%;
+  }
+}
+.colApp {
+  vertical-align: middle;
+}
+.appIntro {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .appIntro {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+}
+#logo {
+  width: 100%;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  #logo {
+    line-height: 100px;
+  }
+}
+.position {
+  vertical-align: middle;
+  position: absolute;
+  top: -21%;
+}
+body {
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../src/assets/AAmeetup.jpg");
+}
+
+.group-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
