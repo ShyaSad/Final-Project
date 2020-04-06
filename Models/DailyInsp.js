@@ -9,6 +9,6 @@ reference: { type: String, required: true},
 text: { type: String, required: true}
 })
 
-const inspireD = mongoose.model("Daily Inspirations", inspirationSchema);
+const inspireD = mongoose.model("dailyInspirations", inspirationSchema, "dailyInspirations");
 
 module.exports = inspireD;
