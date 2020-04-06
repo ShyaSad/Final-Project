@@ -1,6 +1,7 @@
 import React from "react";
 // import Example from "../../components/Navbar";
 import {Container} from 'reactstrap';
+import {Jumbotron} from 'reactstrap';
 import ContactCard from "../../components/ContactCard";
 
 // import "./OtherGroups.css"
@@ -12,15 +13,18 @@ const ContactGroups = () => {
   const contactResourceCards = contacts.map(contact => <ContactCard name= {contact.name} title={contact.title} url={contact.url} email={contact.email}/>)  ;
   return (
     <React.Fragment>
+      <Jumbotron>
       <Container>
-        
+      <h1 className="text-center" >Contact</h1>
         {contactResourceCards}
 
-          <div className="position">
-          </div>
+          {/* <div className="position">
+           
+          </div> */}
           
        
       </Container>
+      </Jumbotron>
     </React.Fragment>
   )
 }

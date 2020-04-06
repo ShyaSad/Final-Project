@@ -1,3 +1,7 @@
+h1 {
+  text-align: justify;
+}
+
 .navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
