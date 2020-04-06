@@ -1,5 +1,7 @@
 import React from "react";
 import "./OtherGroups.css";
+import ResourceCards from "../../components/ResourceCards";
+import {Container} from "reactstrap";
 
 // import "./OtherGroups.css"
 const OtherGroups = () => {

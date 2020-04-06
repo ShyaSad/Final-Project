@@ -18,7 +18,7 @@ function App() {
       <Navbar/>
       <Container>
         <Route exact path="/" component={()=><Landing username='someone'/>} />
-        <Route exact path="/contactpage" component={Contact} />
+        <Route exact path="/contact" component={Contact} />
         <Route exact path="/dailyinspirations" component={Inspire} />
         <Route exact path="/meetingcreation" component={MeetingAdd} />
         <Route exact path='/meetings' component={()=><MeetingsPage username='someone'/>}/>
