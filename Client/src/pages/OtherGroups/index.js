@@ -1,7 +1,7 @@
 import React from "react";
 import "./OtherGroups.css";
 import ResourceCards from "../../components/ResourceCards";
-// import {Container} from "reactstrap";
+import {Container} from "reactstrap";
 
 // import "./OtherGroups.css"
 const OtherGroups = () => {
@@ -25,7 +25,8 @@ const OtherGroups = () => {
   return (
     <React.Fragment>
       {/* <Example /> */}
-      {/* <Container> */}
+      <Container className="groups-container">
+        <h1>RESOURCES</h1>
         
         {groupResourceCards}
 
@@ -33,7 +34,7 @@ const OtherGroups = () => {
           </div>
           
        
-      {/* </Container> */}
+      </Container>
     </React.Fragment>
   )
 }
