@@ -1,31 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
 import "./LoginPage.css";
-import login from "../../utils/API";
+import API from "../../utils/API";
 
-const LoginFunc = () => {
-  const data = {
-    email: "email",
-    password: "test"
+
+const LoginForm = (props) => {
+  const [username, setUsername] = useState();
+  const [password, setPassword] = useState();
+
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    console.log("username is " + username);
+    console.log("password is " + password);
+    API.login({
+      email: username, password
+    }).then(response => {
+      // redirect the user to the login page 
+
+      // if response.data.success === true
+      console.log(response)
+    });
   };
-  login.login(data).then(res => console.log(res)).catch(err => console.log(err))
-}
-
-const Example = (props) => {
   return (
-      <Container className="login-container">
-          <h1 className="login-text">LOGIN</h1>
+    <Container className="login-container">
+      <h1 className="login-text">LOGIN</h1>
       <Form>
-      <FormGroup>
-        <Input type="email" name="email" id="exampleEmail" placeholder="Email" />
-      </FormGroup>
-      <FormGroup>
-        <Input type="password" name="password" id="examplePassword" placeholder="Password" />
-      </FormGroup>
-      <Button className="center" onClick={LoginFunc}>Submit</Button>
-    </Form>
+        <FormGroup>
+          <Input type="email" name="email" id="exampleEmail" placeholder="Email" onChange={e => setUsername(e.target.value)} />
+        </FormGroup>
+        <FormGroup>
+          <Input type="password" name="password" id="examplePassword" placeholder="Password" onChange={e => setPassword(e.target.value)} />
+        </FormGroup>
+        <Button className="center" onClick={handleSubmit}>Submit</Button>
+      </Form>
     </Container>
   );
 }
 
-export default Example;
+export default LoginForm;
