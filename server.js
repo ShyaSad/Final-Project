@@ -4,6 +4,8 @@ const PORT = process.env.PORT || 3001;
 const mongoose = require('mongoose');
 const app = express();
 const apiRoutes = require('./Routes/api')
+const dotenv = require("dot-env");
+dotenv.config();
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
