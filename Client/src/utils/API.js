@@ -1,11 +1,11 @@
-import axios from 'axios';
+// import axios from 'axios';
 
-export default {
+// export default {
 
-    getMeetings: ()=> axios.get('/meetings/allmeetings'),
-    createMeeting: (params) => axios.post('/meeting/create', params),
-    getDailyReflections: () => axios.get('/daily/inspirations'),
-    login: (params)=> axios.post('/auth/login', params),
-    signUp: (params)=> axios.post('/auth/signup', params)
+//     getMeetings: ()=> axios.get('/meetings/allmeetings'),
+//     createMeeting: (params) => axios.post('/meeting/create', params),
+//     getDailyReflections: () => axios.get('/daily/inspirations'),
+//     login: (params)=> axios.post('/auth/login', params),
+//     signUp: (params)=> axios.post('/auth/signup', params)
 
-}
+// }

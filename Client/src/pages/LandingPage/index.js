@@ -1,13 +1,18 @@
 // our contact info
-import React from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import {Container, Row, Col, Button} from 'reactstrap';
 import Logo from '../../assets/aa-away-logo.svg';
+import land from '../../assets/AAmeetup-dark.jpg'
 import "./Landing.css";
 
 
-// import "./LandingPage.css"
-
 const LandingPage = () => {
+
+  useEffect(()=>{
+    document.body.style.backgroundImage = `url(${land})`
+
+  },[])
+
   return (
     <React.Fragment>
       <Container className="land-cont">
@@ -26,12 +31,10 @@ const LandingPage = () => {
         </Row>
 
         <Row className="justify-content-md-center">
-          <h3 className="appIntro">Have your AA meetings on the go</h3>
+          <h3 className="appIntro">Have your AA meetings <br />on the go</h3>
         </Row>
 
-        <Row className="justify-content-md-center">
-          <Button as="input" type="submit" value="Find Meeting" />{" "}
-        </Row>
+     
       </Container>
     </React.Fragment>
   );

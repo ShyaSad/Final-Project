@@ -49,6 +49,8 @@ componentDidMount() {
     }, 1000);
 }
 
+
+
     render() {
         return (
             <div className="counter">

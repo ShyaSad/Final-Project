@@ -12,8 +12,8 @@ const Example = (props) => {
 
 
   return (
-    <Dropdown isOpen={dropdownOpen} toggle={()=>setDropdownOpen(!dropdownOpen)}>
-      <DropdownToggle caret>
+    <Dropdown id="dropdown" isOpen={dropdownOpen} toggle={()=>setDropdownOpen(!dropdownOpen)}>
+      <DropdownToggle id="daySelect" caret>
         {selected}
         </DropdownToggle>
       <DropdownMenu>
