@@ -1,23 +1,34 @@
 .navbar-brand {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-  }
-  
-  .navbar-a {
-      width: 100%;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
-  }
-  .signup-container {
-    background-color: #FCF8EE;
-    opacity: .8;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: auto;
-  }
-  
- 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.navbar-a {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.signup-container {
+  /* background-color: rgb(122, 122, 122); */
+  opacity: .8;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: auto;
+}
+
+.signup-text{
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  color: goldenrod;
+  padding-top: 50px;
+}
+
+.signup-button {
+  justify-content: center;
+  color: goldenrod;
+}

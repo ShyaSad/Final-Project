@@ -25,8 +25,9 @@ const OtherGroups = () => {
   return (
     <React.Fragment>
       {/* <Example /> */}
+      <h1 className="resources-text">RESOURCES</h1>
+
       <Container className="groups-container">
-        <h1>RESOURCES</h1>
         
         {groupResourceCards}
 
