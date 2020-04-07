@@ -10,8 +10,18 @@
     background-color: #50524E;
     padding-left: 15px;
   }
+
+  #favorites {
+    font-size: 9pt;
+    margin-left: 20px;
+    color: #50524E;
+    background-color: #FCF8EE;
+    box-shadow: 1px 1px 3px #f5dea4;
+    cursor: pointer;
+  }
   
   #meeting-time {
+    background-color: transparent;
     color: black;
     padding-left: 15px;
   }
@@ -24,5 +34,6 @@
   
   #meeting-link {
     margin-left: 15px;
+    box-shadow: 2px 3px 5px #888888;
   }
   
