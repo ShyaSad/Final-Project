@@ -11,7 +11,7 @@
       margin-left: auto;
   }
   .login-container {
-    background-color: #FCF8EE;
+    /* background-color: rgb(122, 122, 122); */
     opacity: .8;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -19,5 +19,17 @@
     padding-bottom: 25px;
     width: auto;
   }
+
+  .login-text{
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    color: goldenrod;
+    padding-top: 50px;
+  }
   
+  .login-button {
+    justify-content: center;
+    color: goldenrod;
+  }
  
