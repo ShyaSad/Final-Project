@@ -1,0 +1,76 @@
+.counter {
+    grid-area: counter;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 150px));
+    grid-gap: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.goal {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    color: goldenrod;
+    padding-top: 50px;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+
+}
+
+.counter div:not(:last-child) {
+    border-right: 2px solid var(--yellow);
+}
+
+.count-one {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+.count-num {
+    font-size: 30px;
+    font-weight: 700;
+    transition: all 0.2s ease-in;
+}
+
+.counter-num:hover {
+    transform: scale(1.5);
+}
+
+.counter-deps {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.temp-photo {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.prodName {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+@media (max-width: 600px) {
+    .counter {
+        border-bottom: 5px solid var(--yellow);
+    }
+    .counter div:not(:last-child) {
+        border-right: 0px;
+    }
+}
+
