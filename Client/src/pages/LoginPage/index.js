@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
+import { Redirect } from "react-router-dom";
 import "./LoginPage.css";
 import API from "../../utils/API";
 
@@ -16,10 +17,14 @@ const LoginForm = (props) => {
     API.login({
       email: username, password
     }).then(response => {
-      // redirect the user to the login page 
-
       // if response.data.success === true
-      console.log(response)
+      console.log(response.data)
+      if (response.data.success === true) {
+        return <Redirect to="/meetings" />
+      } else {
+        console.log(response.data.msg);
+      }
+      // redirect the user to the login page 
     });
   };
   return (

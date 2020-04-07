@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from 'reactstrap';
 
 import Navbar from "./components/Navbar";
@@ -18,13 +18,13 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <Navbar/>
+      <Navbar />
       <Container>
-        <Route exact path="/" component={()=><Landing username='someone'/>} />
+        <Route exact path="/" component={() => <Landing username='someone' />} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/dailyinspirations" component={Inspire} />
         <Route exact path="/meetingcreation" component={MeetingAdd} />
-        <Route exact path='/meetings' component={()=><MeetingsPage username='someone'/>}/>
+        <Route exact path='/meetings' component={() => <MeetingsPage username='someone' />} />
         <Route exact path="/othergroups" component={Other} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/login" component={Login} />
