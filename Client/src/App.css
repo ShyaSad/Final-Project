@@ -128,7 +128,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url("../src/assets/AAmeetup-dark.jpg");
 }
 
 /* .btn-primary {
@@ -150,7 +149,7 @@ position: absolute;
   top: 50%;
 }
 .appName-leftSide {
-  font-size: 4rem;
+  font-size: 4vw;
   color: white;
   text-align: center !important;
   text-transform: uppercase;
@@ -166,7 +165,7 @@ position: absolute;
   }
 }
 .appName {
-  font-size: 4rem;
+  font-size: 4vw;
   color: white;
   text-align: center !important;
   text-transform: uppercase;
@@ -184,20 +183,7 @@ position: absolute;
 .colApp {
   vertical-align: middle;
 }
-.appIntro {
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  line-height: 80px;
-  font-weight: 300;
-  font-family: 'Raleway', sans-serif;
-}
-@media only screen and (max-width: 600px) {
-  .appIntro {
-    font-size: 2rem;
-    line-height: 40px;
-  }
-}
+
 #logo {
   width: 100%;
   align-items: center;
@@ -205,8 +191,16 @@ position: absolute;
 @media only screen and (max-width: 600px) {
   #logo {
     line-height: 100px;
+    width: 47%;
   }
 }
+@media only screen and (min-width: 992px) {
+  #logo {  
+    line-height: 100px;
+    width: 100%;}
+} 
+
+
 .position {
   vertical-align: middle;
   position: absolute;
@@ -224,4 +218,20 @@ body {
 .group-card {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.appIntro {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .appIntro {
+    font-size: 2rem;
+    line-height: 40px;
+  }
 }
