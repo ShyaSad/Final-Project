@@ -1,8 +1,8 @@
 // our contact info
 import React, { Fragment, useState, useEffect } from "react";
 import {Container, Row, Col, Button} from 'reactstrap';
-import Logo from '../../assets/aa-away-logo.svg';
-import land from '../../assets/AAmeetup-dark.jpg'
+// import Logo from '../../assets/aa-away-logo.svg';
+import land from '../../assets/AAmeetup-dark-copy.jpg'
 import "./Landing.css";
 
 
@@ -22,7 +22,7 @@ const LandingPage = () => {
           </Col>
           <div className="position">
             <Col md="auto" className="logoIcon">
-              <img src={Logo} id="logo" alt='AA Away Logo' />
+              {/* <img src={Logo} id="logo" alt='AA Away Logo' /> */}
             </Col>
           </div>
           <Col className="colApp">

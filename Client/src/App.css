@@ -151,10 +151,11 @@ position: absolute;
 .appName-leftSide {
   font-size: 4vw;
   color: white;
-  text-align: center !important;
+  text-align: right !important;
   text-transform: uppercase;
   font-weight: 800;
   font-family:'Raleway', sans-serif;
+  margin-right: 120px;
 }
 @media only screen and (max-width: 600px) {
   .appName-leftSide {
@@ -162,21 +163,23 @@ position: absolute;
     position: fixed;
     top: 35%;
     right: 16%;
+    margin-right: 0px;
   }
 }
 .appName {
   font-size: 4vw;
   color: white;
-  text-align: center !important;
+  text-align: left !important;
   text-transform: uppercase;
   font-weight: 800;
   font-family:'Raleway', sans-serif;
+  margin-left: 80px;
 }
 @media only screen and (max-width: 600px) {
   .appName {
     font-size: 3rem;
     position: fixed;
-    top: 65%;
+    top: 67%;
     right: 16%;
   }
 }
@@ -233,5 +236,6 @@ body {
   .appIntro {
     font-size: 2rem;
     line-height: 40px;
+    margin-top: 80px;
   }
 }
