@@ -1,28 +1,28 @@
-.card {
+#meeting-card-bg {
     background-color: #fcf8ee;
     opacity: .8;
     margin: 5px;
   }
   
-  .card-header {
+  #meeting-name {
     font-weight: bold;
     color: #fcf8ee;
     background-color: #50524E;
     padding-left: 15px;
   }
   
-  .card-title {
+  #meeting-time {
     color: black;
     padding-left: 15px;
   }
   
-  .card-text {
+  #meeting-notes {
     color: black;
     font-weight: lighter;
     padding-left: 15px;
   }
   
-  .card-link {
+  #meeting-link {
     margin-left: 15px;
   }
   
