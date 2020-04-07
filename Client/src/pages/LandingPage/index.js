@@ -2,6 +2,9 @@
 import React from "react";
 import {Container, Row, Col, Button} from 'reactstrap';
 import Logo from '../../assets/aa-away-logo.svg';
+import "./Landing.css";
+
+
 // import "./LandingPage.css"
 
 const LandingPage = () => {

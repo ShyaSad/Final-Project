@@ -26,7 +26,7 @@ function App() {
         <Route exact path="/meetingcreation" component={MeetingAdd} />
         <Route exact path='/meetings' component={()=><MeetingsPage username='someone'/>}/>
         <Route exact path="/othergroups" component={Other} />
-        <Route exact path="/profilepage" component={Profile} />
+        <Route exact path="/profile" component={Profile} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={SignUp} />
 
