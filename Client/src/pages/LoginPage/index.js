@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 import "./LoginPage.css";
 import API from "../../utils/API";
 
@@ -8,7 +8,7 @@ import API from "../../utils/API";
 const LoginForm = (props) => {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
-
+  let history = useHistory();
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -20,7 +20,7 @@ const LoginForm = (props) => {
       // if response.data.success === true
       console.log(response.data)
       if (response.data.success === true) {
-        return <Redirect to="/meetings" />
+        return history.push("/meetings")
       } else {
         console.log(response.data.msg);
       }
