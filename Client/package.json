@@ -1,7 +1,7 @@
 {
-  "name": "mern",
-  "version": "0.1.0",
-  "description": "Mern Demo",
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "## About This Boilerplate",
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
