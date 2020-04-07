@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { Container, Row, Col } from 'reactstrap';
-import seed from "../../utils/dailyReflectionSeed";
+import seed from "../../../../Scripts/dailyReflectionSeed";
 import ReflectionCard from "../../components/ReflectionCard";
 import Date from "../../components/Date";
 import moment from "moment";
