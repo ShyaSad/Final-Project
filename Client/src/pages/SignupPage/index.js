@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
 import "./SignupPage.css";
 import API from "../../utils/API";
-import { Redirect } from 'react-router-dom';
+import { Redirect, useHistory } from 'react-router-dom';
 
 
 const SignupForm = (props) => {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
-
+  let history = useHistory();
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -21,7 +21,7 @@ const SignupForm = (props) => {
 
       if (response.status === 200) {
         console.log("Works")
-        return <Redirect push to="/login" />
+        return history.push("/login")
       } else {
         console.log("There was an error signing up");
       }
