@@ -14,11 +14,11 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Define API routes here
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/aaadb', 
-{
-  useCreateIndex: true,
-  useNewUrlParser: true
-}
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/aaadb',
+  {
+    useCreateIndex: true,
+    useNewUrlParser: true
+  }
 )
 
 app.use(apiRoutes);
