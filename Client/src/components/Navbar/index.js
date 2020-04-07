@@ -54,10 +54,10 @@ const Example = props => {
           </Nav>
           <NavbarText></NavbarText>
           <NavItem>
-        <Button href="#">Login</Button>
+        <Button href="/login">Login</Button>
         </NavItem>
         <NavItem>
-        <Button href="#">Sign Up</Button>
+        <Button href="/signup">Sign Up</Button>
         </NavItem>
         </Collapse>
       </Navbar>
