@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import seed from "../../../../Scripts/meetingSeed";
+import seed from "../../utils/meetingSeed.json";
 // import rando from '../../utils/modifiedRandom.json'
 import MeetingCards from "../../components/MeetingCards";
 import Pagination from "../../components/Pagination";

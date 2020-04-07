@@ -1,4 +1,4 @@
-/* .navbar-brand {
+ .navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
   }
@@ -11,7 +11,7 @@
       margin-left: auto;
   }
   .login-container {
-    /* background-color: rgb(122, 122, 122); */
+      background-color: rgb(122, 122, 122);
     opacity: .8;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -32,4 +32,3 @@
     justify-content: center;
     color: goldenrod;
   }
-  */

@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { Container, Row, Col } from 'reactstrap';
-import seed from "../../../../Scripts/dailyReflectionSeed";
+import apicall from "../../utils/API";
+import axios from "axios";
 import ReflectionCard from "../../components/ReflectionCard";
 import Date from "../../components/Date";
 import moment from "moment";
@@ -12,19 +13,20 @@ const Reflections = () => {
   const day = moment().format("Do");
   const d = moment().format("D");
   // eslint-disable-next-line
-  const [reflections, setReflections] = useState(seed);
+  const [reflections, setReflections] = useState([]);
   const [filteredReflections, setFilteredReflections] = useState([]);
 
   useEffect(() => {
-    setFilteredReflections(
-      reflections.filter((a) => a.date === `${month} ${d}`)
-    );
-  },[reflections]);
-
-  useEffect(()=>{
     document.body.style.backgroundImage = `url(${bg})`
+    apicall.getDailyReflections().then((response) => {
+      const reflectionList = response.data;
+      const date = `${month} ${d}`;
+      const todaysReflection = reflectionList.filter((reflection ) => reflection.date === date)[0];
 
-  },[])
+      setFilteredReflections([todaysReflection]);
+    });
+  },[]);
+
 
   return (
     <Fragment >
