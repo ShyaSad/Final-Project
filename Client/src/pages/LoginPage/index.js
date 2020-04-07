@@ -3,13 +3,14 @@ import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
 import "./LoginPage.css";
 import login from "../../utils/API";
 
-const LoginFunc = () => {
-  const data = {
-    email: "email",
-    password: "test"
-  };
-  login.login(data).then(res => console.log(res)).catch(err => console.log(err))
-}
+// const LoginFunc = () => {
+//   const data = {
+//     email: "email",
+//     password: "test"
+//   };
+//   login.login(data).then(res => console.log(res)).catch(err => console.log(err))
+// }
+const meme = console.log(Input.text);
 
 const Example = (props) => {
   return (
@@ -24,7 +25,7 @@ const Example = (props) => {
         <Label for="examplePassword">Password</Label>
         <Input type="password" name="password" id="examplePassword" placeholder="Password" />
       </FormGroup>
-      <Button onClick={LoginFunc}>Submit</Button>
+      <Button onClick={meme}>Submit</Button>
     </Form>
     </Container>
   );
