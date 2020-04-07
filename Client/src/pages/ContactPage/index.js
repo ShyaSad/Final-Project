@@ -4,7 +4,7 @@ import {Container} from 'reactstrap';
 import {Jumbotron} from 'reactstrap';
 import ContactCard from "../../components/ContactCard";
 import './style.css';
-import "./Contact.css";
+// import "./Contact.css";
 
 // import "./OtherGroups.css"
 const ContactGroups = () => {
@@ -15,9 +15,8 @@ const ContactGroups = () => {
   const contactResourceCards = contacts.map(contact => <ContactCard name= {contact.name} title={contact.title} url={contact.url} email={contact.email}/>)  ;
   return (
     <React.Fragment>
-      <Jumbotron className="jumbotron">
-      <Container>
-      <h1 className="text-center" >Contact</h1>
+      <h1 className="text-center" >CONTACT</h1>
+      <Container className="contact-container"> 
         {contactResourceCards}
 
           {/* <div className="position">
@@ -26,7 +25,6 @@ const ContactGroups = () => {
           
        
       </Container>
-      </Jumbotron>
     </React.Fragment>
   )
 }

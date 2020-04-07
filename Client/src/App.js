@@ -11,6 +11,8 @@ import MeetingsPage from "./pages/MeetingsPage";
 import Other from "./pages/OtherGroups";
 import Profile from "./pages/ProfilePage";
 import Login from "./pages/LoginPage";
+import SignUp from "./pages/SignupPage";
+
 import "./App.css";
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
         <Route exact path="/othergroups" component={Other} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={SignUp} />
+
       </Container>
     </Router>
   );

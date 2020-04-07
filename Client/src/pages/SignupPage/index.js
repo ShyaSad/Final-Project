@@ -1,20 +1,20 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
-import "./LoginPage.css";
-import login from "../../utils/API";
+import "./SignupPage.css";
+import signup from "../../utils/API";
 
-const LoginFunc = () => {
+const SignupFunc = () => {
   const data = {
     email: "email",
     password: "test"
   };
-  login.login(data).then(res => console.log(res)).catch(err => console.log(err))
+  signup.signup(data).then(res => console.log(res)).catch(err => console.log(err))
 }
 
 const Example = (props) => {
   return (
-      <Container className="login-container">
-          <h1 className="login-text">LOGIN</h1>
+      <Container className="signup-container">
+          <h1 className="signup-text">SIGN UP</h1>
       <Form>
       <FormGroup>
         <Input type="email" name="email" id="exampleEmail" placeholder="Email" />
@@ -22,7 +22,7 @@ const Example = (props) => {
       <FormGroup>
         <Input type="password" name="password" id="examplePassword" placeholder="Password" />
       </FormGroup>
-      <Button className="center" onClick={LoginFunc}>Submit</Button>
+      <Button className="center" onClick={SignupFunc}>Submit</Button>
     </Form>
     </Container>
   );

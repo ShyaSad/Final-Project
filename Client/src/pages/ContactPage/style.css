@@ -1,9 +1,19 @@
 h1 {
-  text-align: justify;
+  font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    color: goldenrod;
+    padding-top: 50px;
 }
 
-.jumbotron {
-  background: none;
+.contact-container{
+    background-color: #FCF8EE;
+    opacity: .8;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: auto;
 }
   .navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -17,9 +27,15 @@ h1 {
       margin-right: auto;
       margin-left: auto;
   }
+  
+  .card {
+    border: none;
+  }
+
   .card-body {
     background-color: #FCF8EE;
-    opacity: .8;
+    border: none;
+    opacity: .9;
   }
   .card-title {
     font-weight: bold;
@@ -30,10 +46,15 @@ h1 {
   .card-subtitle {
     color: black;
     padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
   }
   .card-text {
     color: black;
     font-weight: lighter;
     padding-left: 15px;
+    font-size: 14px;
+    text-decoration: none;
   }
  
