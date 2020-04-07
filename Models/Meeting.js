@@ -3,12 +3,13 @@ const Schema = mongoose.Schema;
 
 const meetingSchema = new Schema({
     name: { type: String, required: true },
-    day: { type: String, required: true },
-    time: { type: String, required: true },
-    link: { type: String, required: true},
+    day: { type: String },
+    time: { type: String },
+    link: { type: String },
     phone: { type: String },
     code: { type: String },
-    notes: { type: String }
+    notes: { type: String },
+    military: { type: Number }
 });
 
 const meeting = mongoose.model("Meeting", meetingSchema);
