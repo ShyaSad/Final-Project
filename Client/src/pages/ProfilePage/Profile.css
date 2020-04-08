@@ -16,6 +16,12 @@
     color: goldenrod;
     padding-top: 50px;
 }
+@media (max-width: 600px) {
+    .goal {
+        font-size: 3.5rem;
+    }
+
+}
 
 .description {
     font-size: 1.5rem;
@@ -57,7 +63,13 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
-    border-radius: 50%;
+
+}
+
+@media (max-width: 600px) {
+    .temp-photo {
+margin-left: 35px;        
+    }
 
 }
 

@@ -3,7 +3,7 @@ import team from '../../assets/connection-copy.jpg'
 import "./Profile.css";
 
 import TimerCal from '../../components/Timer/TimerCal';
-import Placeimg from '../../assets/man-1.jpg';
+import Placeimg from '../../assets/man-1.png';
 import { Container, Row, Col } from 'reactstrap';
 import Button from 'react-bootstrap/Button'
 
