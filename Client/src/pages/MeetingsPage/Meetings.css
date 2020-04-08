@@ -1,8 +1,8 @@
 .meetingsDiv {
-    height: 80vh;
+    height: 90vh;
     overflow-y: scroll;
-    border-radius: 20px;
-    box-shadow: 5px 5px 7px 7px gray, 0 10px 20px 0 lightblue
+    border-radius: 15px;
+    /* box-shadow: 5px 5px 7px 7px gray, 0 10px 20px 0 lightblue */
 }
 
 ::-webkit-scrollbar {

@@ -4,10 +4,13 @@
   margin: 50px;
 }
 
+.card-body {
+  border-radius: 20px;
+}
+
 #title {
   font-size: 2vw;
-  font-family: fantasy;
-  color: black;
+  font-family: 'El Messiri', sans-serif;  color: black;
   background-color: transparent;
   padding-left: 15px;
 }

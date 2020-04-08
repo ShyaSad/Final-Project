@@ -2,8 +2,8 @@ nav #daySelect {
     width: 100%;
 }
 
-#daySelect {
-    max-width: fit-content;
+.page-item .page-link {
+    max-width: max-content;
     background-color: #e0a118;
     color: #ffe7b4;
 }
