@@ -10,49 +10,56 @@ const Day = ({setFav, fav, handleFilter}) => {
   }, [selected]);
 
   return (
-    <Pagination id="daySelect" aria-label="Select Day of the Week">
+    <Pagination id="daySelect" justifyContent="center" aria-label="Select Day of the Week">
+
       <PaginationItem>
         <PaginationLink onClick={() => setSelected("Monday")}>
           Mon
         </PaginationLink>
       </PaginationItem>
+
       <PaginationItem>
         <PaginationLink onClick={() => setSelected("Tuesday")}>
           Tue
         </PaginationLink>
       </PaginationItem>
+
       <PaginationItem>
         <PaginationLink onClick={() => setSelected("Wednesday")}>
           Wed
         </PaginationLink>
       </PaginationItem>
+
       <PaginationItem>
         <PaginationLink onClick={() => setSelected("Thursday")}>
           Thur
         </PaginationLink>
       </PaginationItem>
+
       <PaginationItem>
         <PaginationLink onClick={() => setSelected("Friday")}>
           Fri
         </PaginationLink>
-        
-        
       </PaginationItem>
+
       <PaginationItem>
        <PaginationLink onClick={() => setSelected("Saturday")}>
           Sat
         </PaginationLink>
       </PaginationItem>
+
       <PaginationItem>
         <PaginationLink onClick={() => setSelected("Sunday")}>
           Sun
         </PaginationLink>
       </PaginationItem>
+
       <PaginationItem>
         <PaginationLink onClick={() => setFav(!fav)}>
           {fav ? 'View All Upcoming' : 'View Favorites'}
         </PaginationLink>
       </PaginationItem>
+      
     </Pagination>
   );
 };

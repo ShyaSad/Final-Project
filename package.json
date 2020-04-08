@@ -10,7 +10,7 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn run client\"",
     "client": "cd client && yarn run start",
     "build": "cd client && yarn run build",
-    "heroku-postbuild": "yarn install && yarn run build"
+    "heroku-postbuild": "yarn run build"
   },
   "repository": {
     "type": "git",
