@@ -4642,6 +4642,6 @@ const meetingSeedMod = meetingSeed.map((a,i)=> {
   a.time.match(/PM/) && hour === 12 ? 0 : -12) + minutes
 
   return {...a, military: modTime}
-}).sort((a,b)=> a.name > b.name ? -1 : a.name < b.name ? 1 : 0)
+})
 
-fs.writeFile('./modifiedRandom.json', JSON.stringify(meetingSeedMod), (err)=> console.log(err))
+fs.writeFile('./meedtingSeed.json', JSON.stringify(meetingSeedMod), (err)=> console.log(err))
