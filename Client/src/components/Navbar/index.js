@@ -1,20 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import {
-  Button,
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from "reactstrap";
+import { Button, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 import Logo from "../../assets/inline-logo.svg";
 
 const Example = props => {
@@ -27,38 +13,37 @@ const Example = props => {
       <NavbarBrand href="/"><img src={Logo} alt="AA Away"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
+
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/dailyinspirations">Daily Inspirations</NavLink>
+              <NavLink href="/meetings">Meetings</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/profile">Profile</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/contact">Contact</NavLink>
-            </NavItem>
+
             <NavItem>
               <NavLink href="/othergroups">Other Groups</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Meetings
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem href="/meetings">Upcoming</DropdownItem>
-                <DropdownItem>Favorites</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Filter</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+
+            <NavItem>
+              <NavLink href="/dailyinspirations">Daily Inspirations</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink href="/profile">Profile</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink href="/contact">Contact</NavLink>
+            </NavItem>
           </Nav>
-          <NavbarText></NavbarText>
+
           <NavItem>
-        <Button href="/login">Login</Button>
-        </NavItem>
-        <NavItem>
-        <Button href="/signup">Sign Up</Button>
-        </NavItem>
+            <Button href="/login">Login</Button>
+          </NavItem>
+
+          <NavItem>
+            <Button href="/signup">Sign Up</Button>
+          </NavItem>
+
         </Collapse>
       </Navbar>
     </div>
