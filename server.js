@@ -3,7 +3,7 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const mongoose = require('mongoose');
 const app = express();
-const apiRoutes = require('./Routes/api')
+const apiRoutes = require('./Routes')
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -27,9 +27,9 @@ app.use(apiRoutes);
 
 // Send every other request to the React app
 // Define any API routes before this runs
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

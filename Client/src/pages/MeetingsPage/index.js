@@ -1,10 +1,11 @@
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import seed from "../../utils/meetingSeed.json";
 // import rando from '../../utils/modifiedRandom.json'
 import MeetingCards from "../../components/MeetingCards";
 import Pagination from "../../components/Pagination";
 import "./Meetings.css";
+import API from '../../utils/API';
 
 const date = new Date();
 
@@ -12,10 +13,17 @@ export default () => {
   // eslint-disable-next-line
   const [fav, setFav] = useState(0);
   // eslint-disable-next-line
-  const [meetings, setMeetings] = useState(seed);
-  const [filteredMeetings, setFilteredMeetings] = useState(seed);
+  const [meetings, setMeetings] = useState([]);
+  const [filteredMeetings, setFilteredMeetings] = useState([]);
   const [favMeetings, setFavMeetings] = useState([]);
 
+  useEffect(()=>{
+    API.getMeetings().then(response=>{
+      console.log(response)
+      setMeetings(response.data);
+      setFilteredMeetings(response.data)
+    })
+  },[])
 
   const handleSaveFav =(title)=>{
     const favMeeting = meetings.filter(a=> a.name === title);
